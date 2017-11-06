@@ -13,6 +13,6 @@ app.get("/pickupLine", (req, res) => {
     res.status(200).json(pickupLines[randomNumber]);
 });
 
-app.listen(8080, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Listening on port 3000");
 });
